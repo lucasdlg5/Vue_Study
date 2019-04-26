@@ -1,1 +1,1 @@
-@all-contributors please add @lucasdlg5 for Desenvolvedor
+@all-contributors please add @lucasdlg5 for code
