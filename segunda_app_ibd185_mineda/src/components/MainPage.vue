@@ -1,14 +1,20 @@
 <template>
-  <div class="hello">
-    <p> Ce acredita? </p>
+  <div class="MainPage">
+    <inputData/>
+    <resultData/>
   </div>
 </template>
 
 <script>
+import inputData from './inputData.vue'
+import resultData from './resultData.vue'
+
+
 export default {
   name: 'MainPage',
-  props: {
-
+  components: {
+    inputData,
+    resultData
   }
 }
 </script>
