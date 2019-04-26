@@ -1,3 +1,3 @@
 # Vue_Study
 
-@all-contributors
+@all-contributors please add lucasdlg5 for Desenvolvedor
