@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+    <body style="background-color:ghostwhite">
+        <div class="container" style=" margin-top: 20%;">
+            <div class="row justify-content-md-center">
+                <div class="col"id="app">
+
+                    <!-- Sessao de Input de Texto -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Insira um Nome" aria-label="Insira um Nome" aria-describedby="button-addon2" :value="message" @input="Pega_dado">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="button" id="button-addon2" @click="insereLista">Adicionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Sessao de Impressao de Dados -->
+                    <ul class="list-group">
+                        <li class="list-group-item"  v-for="(el, index) in lista">
+                            <p class="text-justify col-10" > {{ index }} - {{ el }}</p>
+                            <button class="btn btn-primary btn-sm btn-block col-1" @click="clickDelete(index)">Deletar</button>
+                        </li>
+                    </ul>  
+
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="javascript.js" ></script>
+    </body>
+</html>
