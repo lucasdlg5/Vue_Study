@@ -1,4 +1,4 @@
-# segunda_app_ibd185_mineda
+# segunda_aplicacao_mineda
 
 ## Project setup
 ```
